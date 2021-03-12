@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vineet</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="{% static 'fonts/material-icon/css/material-design-iconic-font.min.css' %}">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body id="my">
+<style>
+#my{
+background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+</style>
+<script>
+   function checkpass(){
+       if(document.signup.password.value !=document.signup.password2.value){
+           alert("Both Password Don't Match")
+           document.signup.password2.focus();
+           return false
+       }
+       return true
+   }
+
+</script>
+
+    <div class="main" id="my">
+
+        <!-- Sign up form -->
+        <section class="signup" id="my">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Become  Recruiter</h2>
+                        <form action="" method="POST" class="register-form" id="register-form" name="signup" enctype="multipart/form-data" onsubmit="return checkpass()">
+                        {% csrf_token %}
+                            <div class="form-group">
+                                <label for="first_name"><i class="zmdi zmdi-store"></i></label>
+                                <input type="text" name="company_name" id="name" placeholder="Company Name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="company_profile"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="company_profile" required id="name" placeholder="Profile"/>
+                            </div>
+                      
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="pass" placeholder="Password" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="password2" id="re_pass" placeholder="Repeat your password" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="city"><i class="zmdi zmdi-home"></i></label>
+                                <input type="text" name="city" id="re_pass" placeholder="City" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="web_address"><i class="zmdi zmdi-globe-alt"></i></label>
+                                <input type="text" name="web_address" id="re_pass" placeholder="Web Aaddress" required />
+                            </div>
+                             <script type="text/javascript">
+                                    function FileSelected(e)
+                                {
+                                    file = document.getElementById('fu').files[document.getElementById('fu').files.length - 1];
+                                    document.getElementById('fileName').innerText= file.name;
+                                }
+                                </script>
+                               <div class="form-group">
+                                   <input type="file" name="image" accept="image/*"   id="fu" onchange="FileSelected()" style="display: none;" required />
+                                <input class="btn " type="button" onclick="document.getElementById('fu').click()" 
+                                value="Upload Photo" id="my" style="color:white;border-radius:20px;font-weight:500;"/>
+
+                                <span id="fileName"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                          
+                            <div class="form-group form-button">
+                                <input type="submit" style="text-decoration:none;color:white;border-radius:20px;font-weight:500; border-bottom:2px  solid black;" name="signup" id="my" class="form-submit" value="Register"/>
+                                <a href="{% url 'index' %}"  id="my" style="text-decoration:none;color:white;border-radius:20px;margin-left:30px;font-weight:500; border-bottom:2px  solid black;"  class="form-submit" >Home</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="{% static 'images/signup-image.png' %}" alt="sing up image"></figure>
+                        <a href="{% url 'recruiter_login' %}" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    {% ifequal error "no" %}
+    <script>
+        alert("You registered successfully")
+        window.location = ('{% url 'recruiter_index' %}')
+        </script>
+    {% endifequal   %}
+{% ifequal error "yes" %}
+    <script>
+    alert("Something went wrong")
+    </script>
+    {% endifequal   %}
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

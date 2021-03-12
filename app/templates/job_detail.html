@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+ <!-- Preloader Start -->
+       {% include 'preloader.html' %}
+    <!-- Preloader Start -->
+
+        <!-- Header Start -->
+       {% include 'headers.html' %}
+        <!-- Header End -->
+
+    <main>
+
+        <!-- Hero Area Start-->
+        <div class="slider-area ">
+        <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="{% static 'assets/img/hero/about.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap text-center">
+                            <h2>www.jobfinder.com</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Hero Area End -->
+        <!-- job post company Start -->
+        <div class="job-post-company pt-120 pb-120">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- Left Content -->
+                    <div class="col-xl-7 col-lg-8">
+                        <!-- job single -->
+                        <div class="single-job-items mb-50">
+                            <div class="job-items">
+                                <div class="company-img company-img-details">
+                                    <a href="#"><img src="{{job.recruiter.image.url }}"  style ="width:100px;height:100px" alt=""></a>
+                                </div>
+                                <div class="job-tittle">
+                                    <a href="#">
+                                        <h4>{{job.job.job_title}}</h4>
+                                    </a>
+                                    <ul>
+                                        <li>{{job.recruiter.company_name}}</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>{{job.job_location}}</li>
+                                        <li>$3500 - $4000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                          <!-- job single End -->
+                       
+                        <div class="job-post-details">
+                            <div class="post-details1 mb-50">
+                                <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Job Description</h4>
+                                </div>
+                                <p>{{job.discription}}</p>
+                            </div>
+                            <div class="post-details2  mb-50">
+                                 <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Skills, and Abilities</h4>
+                                </div>
+                               <ul>
+                                   <li>{{job.skill}}</li>
+                                 
+                               </ul>
+                            </div>
+                            <div class="post-details2  mb-50">
+                                 <!-- Small Section Tittle -->
+                                <div class="small-section-tittle">
+                                    <h4>Education + Experience</h4>
+                                </div>
+                               <ul>
+                                   <li>{{job.experiance_qualification}}</li>
+                                 
+                               </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Right Content -->
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="post-details3  mb-50">
+                            <!-- Small Section Tittle -->
+                           <div class="small-section-tittle">
+                               <h4>Job Overview</h4>
+                           </div>
+                          <ul>
+                              <li>Start date : <span>{{job.start_date}}</span></li>
+                              <li>Location : <span>{{job.job_location}}</span></li>
+                              <li>Vacancy : <span>{{job.vacancy}}</span></li>
+                              <li>Job nature : <span>{{job.job_type}}</span></li>
+                              <li>Last date : <span>{{job.end_date}}</span></li>
+                          </ul>
+                         <div class="apply-btn2">
+                         {% if request.user.is_authenticated %}
+                            <a href="{% url 'job_apply'  job.id %}" class="btn">Apply Now</a>
+                            {% else %}
+                                        
+                            <a href="{% url 'student_login'  %}" class="btn">Login</a>
+                         {% endif %}
+                
+                         </div>
+                       </div>
+                        <div class="post-details4  mb-50">
+                            <!-- Small Section Tittle -->
+                           <div class="small-section-tittle">
+                               <h4>Company Information</h4>
+                           </div>
+                              <span>Company Profile</span>
+                              <p>{{job.recruiter.company_profile}}</p>
+                            <ul>
+                                <li>Name: <span>{{job.recruiter.company_name}} </span></li>
+                                <li>Web : <span> {{job.recruiter.web_address}}</span></li>
+                                <li>Email: <span>{{job.recruiter.user.username}}</span></li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- job post company End -->
+
+    </main>
+
+        <!-- Footer Start-->
+      {% include 'footers.html' %}
+        <!-- Footer End-->
+
+{% endblock content %}

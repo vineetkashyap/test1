@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vineet</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+   
+</head>
+<body id="my">
+<style>
+#my{
+background: #bc4e9c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+</style>
+    <div class="main" id="my">
+  
+        <!-- Sing in  Form -->
+        <section class="sign-in" id="my">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image" >
+                    <!-- The video -->
+
+                        <figure><img src="{% static 'images/signin-image.png' %}" alt="sing up image"></figure>
+                        <a href="{% url 'student_registration' %}" class="signup-image-link">Create an account</a> !
+                        <a href="{% url 'recruiter_login' %}" class="signup-image-link">Recruiter Login</a> 
+                    </div>
+                    <div class="signin-form">
+                        <h2 class="form-title">Applicant Login</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                           {% csrf_token %}
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="email" name="email" id="your_name" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="your_pass" placeholder="Password"/>
+                            </div>
+    
+                            <div class="form-group form-button">
+                                <input  style="text-decoration:none;color:white;border-radius:20px;font-weight:500; border-bottom:2px  solid black;" type="submit" name="signin" id="my" class="form-submit" value="Log In"/>
+                                <a  class="form-submit"  href="{% url 'index' %}"  style="text-decoration:none;color:white;border-radius:20px;font-weight:500; border-bottom:2px  solid black;" id="my">Home</a>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+{% ifequal error "no" %}
+    <script>
+        alert("You login successfully")
+        window.location = ('{% url 'student_index' %}')
+        </script>
+    {% endifequal   %}
+{% ifequal error "yes" %}
+    <script>
+    alert("Email or Password could be wrong")
+    </script>
+    {% endifequal   %}
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
