@@ -25,7 +25,7 @@ SECRET_KEY =os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['hrst123.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
 
 import socket
 socket.getaddrinfo('localhost', 8000)
@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')   
 ###############Email Configuration#############################
@@ -151,3 +151,9 @@ LOGGING = {
         },
     },
 }
+
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
