@@ -167,5 +167,5 @@ STATICFILES_DIRS = (
 )
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEBUG_PROPAGATE_EXCEPTIONS = True
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorag'
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
