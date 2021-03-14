@@ -20,7 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =os.environ['SECRET_KEY']
+# SECRET_KEY =os.environ['SECRET_KEY']
+SECRET_KEY ='ps0wc-((uh*t3+yi(6cg%&s!sl#f3k#$s44$8g5yd&!@5!c1+m'
 
 
 
@@ -28,6 +29,7 @@ SECRET_KEY =os.environ['SECRET_KEY']
 DEBUG = True
 
 ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
+
 # ALLOWED_HOSTS = ['*']
 
 import socket
@@ -91,7 +93,7 @@ DATABASES = {
 }
 import dj_database_url
 db_from_env= dj_database_url.config(conn_max_age=600)
-DATABASE['default'].update(db_from_env)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
