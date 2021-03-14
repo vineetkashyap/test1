@@ -128,7 +128,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-DEBUG = os.environ.get('DEBUG', '0') == '1' 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
