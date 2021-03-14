@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'Myjob.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jobdata',
-        'USER': 'postgres',
+        'NAME': 'de1ofebrbir4l5',
+        'USER': 'wheowmccizjngk',
         'PASSWORD': '9125vk18',
-        'HOST': 'jobwale.herokuapp.com',
-        # 'PORT': '5432',
+        'HOST': 'ec2-54-159-175-113.compute-1.amazonaws.com',
+         'PORT': '5432',
     }
 }
 
