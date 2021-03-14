@@ -26,7 +26,7 @@ SECRET_KEY ='ps0wc-((uh*t3+yi(6cg%&s!sl#f3k#$s44$8g5yd&!@5!c1+m'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
 
