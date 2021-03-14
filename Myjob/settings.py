@@ -22,10 +22,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY =os.environ['SECRET_KEY']
 
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
+# ALLOWED_HOSTS = ['*']
 
 import socket
 socket.getaddrinfo('localhost', 8000)
@@ -78,8 +81,12 @@ WSGI_APPLICATION = 'Myjob.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'jobdata',
+        'USER': 'postgres',
+        'PASSWORD': '9125vk18',
+        'HOST': 'jobwale.herokuapp.com',
+        # 'PORT': '5432',
     }
 }
 
@@ -151,8 +158,9 @@ LOGGING = {
         },
     },
 }
-DEBUG_PROPAGATE_EXCEPTIONS = True
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+DEBUG_PROPAGATE_EXCEPTIONS = True

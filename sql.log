@@ -259,3 +259,664 @@
 (0.015) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 15 LIMIT 21; args=(15,)
 (0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 15 LIMIT 21; args=(15,)
 (0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 14 LIMIT 21; args=(14,)
+(0.015) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.016) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.125) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.016) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.109) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.016) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); (params None)
+(0.921) CREATE TABLE "django_migrations" ("id" serial NOT NULL PRIMARY KEY, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" timestamp with time zone NOT NULL); args=None
+CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+(0.047) CREATE TABLE "django_content_type" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_model_76bd3d3b_uniq" UNIQUE ("app_label", "model"); (params ())
+(0.062) ALTER TABLE "django_content_type" ADD CONSTRAINT "django_content_type_app_label_model_76bd3d3b_uniq" UNIQUE ("app_label", "model"); args=()
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.062) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2021-03-14T12:56:52.815395+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', '0001_initial', datetime.datetime(2021, 3, 14, 12, 56, 52, 815395, tzinfo=<UTC>))
+CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL); (params None)
+(0.109) CREATE TABLE "auth_permission" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(50) NOT NULL, "content_type_id" integer NOT NULL, "codename" varchar(100) NOT NULL); args=None
+CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE); (params None)
+(0.110) CREATE TABLE "auth_group" ("id" serial NOT NULL PRIMARY KEY, "name" varchar(80) NOT NULL UNIQUE); args=None
+CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL); (params None)
+(0.046) CREATE TABLE "auth_group_permissions" ("id" serial NOT NULL PRIMARY KEY, "group_id" integer NOT NULL, "permission_id" integer NOT NULL); args=None
+CREATE TABLE "auth_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NOT NULL, "is_superuser" boolean NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL); (params None)
+(0.078) CREATE TABLE "auth_user" ("id" serial NOT NULL PRIMARY KEY, "password" varchar(128) NOT NULL, "last_login" timestamp with time zone NOT NULL, "is_superuser" boolean NOT NULL, "username" varchar(30) NOT NULL UNIQUE, "first_name" varchar(30) NOT NULL, "last_name" varchar(30) NOT NULL, "email" varchar(75) NOT NULL, "is_staff" boolean NOT NULL, "is_active" boolean NOT NULL, "date_joined" timestamp with time zone NOT NULL); args=None
+CREATE TABLE "auth_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL); (params None)
+(0.063) CREATE TABLE "auth_user_groups" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "group_id" integer NOT NULL); args=None
+CREATE TABLE "auth_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL); (params None)
+(0.031) CREATE TABLE "auth_user_user_permissions" ("id" serial NOT NULL PRIMARY KEY, "user_id" integer NOT NULL, "permission_id" integer NOT NULL); args=None
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0001_initial', '2021-03-14T12:56:53.369672+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0001_initial', datetime.datetime(2021, 3, 14, 12, 56, 53, 369672, tzinfo=<UTC>))
+ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_codename_01ab375a_uniq" UNIQUE ("content_type_id", "codename"); (params ())
+(0.031) ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_codename_01ab375a_uniq" UNIQUE ("content_type_id", "codename"); args=()
+ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.172) ALTER TABLE "auth_permission" ADD CONSTRAINT "auth_permission_content_type_id_2f476e4b_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); (params ())
+(0.032) CREATE INDEX "auth_permission_content_type_id_2f476e4b" ON "auth_permission" ("content_type_id"); args=()
+CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops); (params ())
+(0.093) CREATE INDEX "auth_group_name_a6ea08ec_like" ON "auth_group" ("name" varchar_pattern_ops); args=()
+ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" UNIQUE ("group_id", "permission_id"); (params ())
+(0.032) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_permission_id_0cd325b0_uniq" UNIQUE ("group_id", "permission_id"); args=()
+ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.000) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.015) ALTER TABLE "auth_group_permissions" ADD CONSTRAINT "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); (params ())
+(0.031) CREATE INDEX "auth_group_permissions_group_id_b120cbf9" ON "auth_group_permissions" ("group_id"); args=()
+CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); (params ())
+(0.063) CREATE INDEX "auth_group_permissions_permission_id_84c5c92e" ON "auth_group_permissions" ("permission_id"); args=()
+CREATE INDEX "auth_user_username_6821ab7c_like" ON "auth_user" ("username" varchar_pattern_ops); (params ())
+(0.047) CREATE INDEX "auth_user_username_6821ab7c_like" ON "auth_user" ("username" varchar_pattern_ops); args=()
+ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_group_id_94350c0c_uniq" UNIQUE ("user_id", "group_id"); (params ())
+(0.031) ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_group_id_94350c0c_uniq" UNIQUE ("user_id", "group_id"); args=()
+ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.016) ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_group_id_97559544_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.000) ALTER TABLE "auth_user_groups" ADD CONSTRAINT "auth_user_groups_group_id_97559544_fk_auth_group_id" FOREIGN KEY ("group_id") REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); (params ())
+(0.031) CREATE INDEX "auth_user_groups_user_id_6a12ed8b" ON "auth_user_groups" ("user_id"); args=()
+CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); (params ())
+(0.031) CREATE INDEX "auth_user_groups_group_id_97559544" ON "auth_user_groups" ("group_id"); args=()
+ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" UNIQUE ("user_id", "permission_id"); (params ())
+(0.110) ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq" UNIQUE ("user_id", "permission_id"); args=()
+ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.000) ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.015) ALTER TABLE "auth_user_user_permissions" ADD CONSTRAINT "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm" FOREIGN KEY ("permission_id") REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); (params ())
+(0.031) CREATE INDEX "auth_user_user_permissions_user_id_a95ead1b" ON "auth_user_user_permissions" ("user_id"); args=()
+CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); (params ())
+(0.110) CREATE INDEX "auth_user_user_permissions_permission_id_1fbb5f2c" ON "auth_user_user_permissions" ("permission_id"); args=()
+CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL); (params None)
+(0.094) CREATE TABLE "django_admin_log" ("id" serial NOT NULL PRIMARY KEY, "action_time" timestamp with time zone NOT NULL, "object_id" text NULL, "object_repr" varchar(200) NOT NULL, "action_flag" smallint NOT NULL CHECK ("action_flag" >= 0), "change_message" text NOT NULL, "content_type_id" integer NULL, "user_id" integer NOT NULL); args=None
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0001_initial', '2021-03-14T12:56:54.409145+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0001_initial', datetime.datetime(2021, 3, 14, 12, 56, 54, 409145, tzinfo=<UTC>))
+ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.015) ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_content_type_id_c4bce8eb_fk_django_co" FOREIGN KEY ("content_type_id") REFERENCES "django_content_type" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.016) ALTER TABLE "django_admin_log" ADD CONSTRAINT "django_admin_log_user_id_c564eba6_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); (params ())
+(0.016) CREATE INDEX "django_admin_log_content_type_id_c4bce8eb" ON "django_admin_log" ("content_type_id"); args=()
+CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); (params ())
+(0.031) CREATE INDEX "django_admin_log_user_id_c564eba6" ON "django_admin_log" ("user_id"); args=()
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0002_logentry_remove_auto_add', '2021-03-14T12:56:54.496713+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0002_logentry_remove_auto_add', datetime.datetime(2021, 3, 14, 12, 56, 54, 496713, tzinfo=<UTC>))
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('admin', '0003_logentry_add_action_flag_choices', '2021-03-14T12:56:54.534245+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('admin', '0003_logentry_add_action_flag_choices', datetime.datetime(2021, 3, 14, 12, 56, 54, 534245, tzinfo=<UTC>))
+CREATE TABLE "app_job" ("id" serial NOT NULL PRIMARY KEY, "job_title" varchar(50) NOT NULL, "job_type" varchar(50) NOT NULL, "job_location" varchar(50) NOT NULL, "experiance_qualification" varchar(1000) NOT NULL, "skill" varchar(1000) NOT NULL, "discription" varchar(1000) NOT NULL, "vacancy" varchar(50) NOT NULL, "creation_date" date NOT NULL, "start_date" date NOT NULL, "end_date" date NOT NULL); (params None)
+(0.078) CREATE TABLE "app_job" ("id" serial NOT NULL PRIMARY KEY, "job_title" varchar(50) NOT NULL, "job_type" varchar(50) NOT NULL, "job_location" varchar(50) NOT NULL, "experiance_qualification" varchar(1000) NOT NULL, "skill" varchar(1000) NOT NULL, "discription" varchar(1000) NOT NULL, "vacancy" varchar(50) NOT NULL, "creation_date" date NOT NULL, "start_date" date NOT NULL, "end_date" date NOT NULL); args=None
+CREATE TABLE "app_student" ("id" serial NOT NULL PRIMARY KEY, "mobile" varchar(15) NULL, "image" varchar(100) NULL, "gender" varchar(50) NULL, "user_type" varchar(50) NULL, "user_id" integer NOT NULL); (params None)
+(0.015) CREATE TABLE "app_student" ("id" serial NOT NULL PRIMARY KEY, "mobile" varchar(15) NULL, "image" varchar(100) NULL, "gender" varchar(50) NULL, "user_type" varchar(50) NULL, "user_id" integer NOT NULL); args=None
+CREATE TABLE "app_recruiter" ("id" serial NOT NULL PRIMARY KEY, "company_name" varchar(200) NULL, "company_profile" varchar(1000) NULL, "city" varchar(100) NULL, "web_address" varchar(200) NULL, "image" varchar(100) NULL, "user_type" varchar(50) NULL, "status" varchar(50) NULL, "user_id" integer NOT NULL); (params None)
+(0.078) CREATE TABLE "app_recruiter" ("id" serial NOT NULL PRIMARY KEY, "company_name" varchar(200) NULL, "company_profile" varchar(1000) NULL, "city" varchar(100) NULL, "web_address" varchar(200) NULL, "image" varchar(100) NULL, "user_type" varchar(50) NULL, "status" varchar(50) NULL, "user_id" integer NOT NULL); args=None
+CREATE TABLE "app_jobapply" ("id" serial NOT NULL PRIMARY KEY, "first_name" varchar(100) NULL, "last_name" varchar(100) NULL, "email" varchar(254) NULL, "adddress" varchar(500) NOT NULL, "zipcode" varchar(20) NOT NULL, "mobile" varchar(15) NOT NULL, "cv" varchar(100) NULL, "job_id" integer NOT NULL, "student_id" integer NOT NULL); (params None)
+(0.047) CREATE TABLE "app_jobapply" ("id" serial NOT NULL PRIMARY KEY, "first_name" varchar(100) NULL, "last_name" varchar(100) NULL, "email" varchar(254) NULL, "adddress" varchar(500) NOT NULL, "zipcode" varchar(20) NOT NULL, "mobile" varchar(15) NOT NULL, "cv" varchar(100) NULL, "job_id" integer NOT NULL, "student_id" integer NOT NULL); args=None
+ALTER TABLE "app_job" ADD COLUMN "recruiter_id" integer NOT NULL CONSTRAINT "app_job_recruiter_id_21060ba8_fk_app_recruiter_id" REFERENCES "app_recruiter"("id") DEFERRABLE INITIALLY DEFERRED; SET CONSTRAINTS "app_job_recruiter_id_21060ba8_fk_app_recruiter_id" IMMEDIATE; (params [])
+(0.015) ALTER TABLE "app_job" ADD COLUMN "recruiter_id" integer NOT NULL CONSTRAINT "app_job_recruiter_id_21060ba8_fk_app_recruiter_id" REFERENCES "app_recruiter"("id") DEFERRABLE INITIALLY DEFERRED; SET CONSTRAINTS "app_job_recruiter_id_21060ba8_fk_app_recruiter_id" IMMEDIATE; args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('app', '0001_initial', '2021-03-14T12:56:54.848955+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('app', '0001_initial', datetime.datetime(2021, 3, 14, 12, 56, 54, 848955, tzinfo=<UTC>))
+ALTER TABLE "app_student" ADD CONSTRAINT "app_student_user_id_49aed64b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.016) ALTER TABLE "app_student" ADD CONSTRAINT "app_student_user_id_49aed64b_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "app_student_user_id_49aed64b" ON "app_student" ("user_id"); (params ())
+(0.031) CREATE INDEX "app_student_user_id_49aed64b" ON "app_student" ("user_id"); args=()
+ALTER TABLE "app_recruiter" ADD CONSTRAINT "app_recruiter_user_id_a71c1df7_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.031) ALTER TABLE "app_recruiter" ADD CONSTRAINT "app_recruiter_user_id_a71c1df7_fk_auth_user_id" FOREIGN KEY ("user_id") REFERENCES "auth_user" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "app_recruiter_user_id_a71c1df7" ON "app_recruiter" ("user_id"); (params ())
+(0.047) CREATE INDEX "app_recruiter_user_id_a71c1df7" ON "app_recruiter" ("user_id"); args=()
+ALTER TABLE "app_jobapply" ADD CONSTRAINT "app_jobapply_job_id_4298ab9a_fk_app_job_id" FOREIGN KEY ("job_id") REFERENCES "app_job" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.000) ALTER TABLE "app_jobapply" ADD CONSTRAINT "app_jobapply_job_id_4298ab9a_fk_app_job_id" FOREIGN KEY ("job_id") REFERENCES "app_job" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+ALTER TABLE "app_jobapply" ADD CONSTRAINT "app_jobapply_student_id_6c41b2f4_fk_app_student_id" FOREIGN KEY ("student_id") REFERENCES "app_student" ("id") DEFERRABLE INITIALLY DEFERRED; (params ())
+(0.000) ALTER TABLE "app_jobapply" ADD CONSTRAINT "app_jobapply_student_id_6c41b2f4_fk_app_student_id" FOREIGN KEY ("student_id") REFERENCES "app_student" ("id") DEFERRABLE INITIALLY DEFERRED; args=()
+CREATE INDEX "app_jobapply_job_id_4298ab9a" ON "app_jobapply" ("job_id"); (params ())
+(0.031) CREATE INDEX "app_jobapply_job_id_4298ab9a" ON "app_jobapply" ("job_id"); args=()
+CREATE INDEX "app_jobapply_student_id_6c41b2f4" ON "app_jobapply" ("student_id"); (params ())
+(0.031) CREATE INDEX "app_jobapply_student_id_6c41b2f4" ON "app_jobapply" ("student_id"); args=()
+CREATE INDEX "app_job_recruiter_id_21060ba8" ON "app_job" ("recruiter_id"); (params ())
+(0.032) CREATE INDEX "app_job_recruiter_id_21060ba8" ON "app_job" ("recruiter_id"); args=()
+ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; (params [])
+(0.016) ALTER TABLE "django_content_type" ALTER COLUMN "name" DROP NOT NULL; args=[]
+ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; (params ())
+(0.031) ALTER TABLE "django_content_type" DROP COLUMN "name" CASCADE; args=()
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2021-03-14T12:56:55.174466+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('contenttypes', '0002_remove_content_type_name', datetime.datetime(2021, 3, 14, 12, 56, 55, 174466, tzinfo=<UTC>))
+ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255); (params [])
+(0.000) ALTER TABLE "auth_permission" ALTER COLUMN "name" TYPE varchar(255); args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.016) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0002_alter_permission_name_max_length', '2021-03-14T12:56:55.193478+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0002_alter_permission_name_max_length', datetime.datetime(2021, 3, 14, 12, 56, 55, 193478, tzinfo=<UTC>))
+ALTER TABLE "auth_user" ALTER COLUMN "email" TYPE varchar(254); (params [])
+(0.000) ALTER TABLE "auth_user" ALTER COLUMN "email" TYPE varchar(254); args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0003_alter_user_email_max_length', '2021-03-14T12:56:55.215493+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0003_alter_user_email_max_length', datetime.datetime(2021, 3, 14, 12, 56, 55, 215493, tzinfo=<UTC>))
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0004_alter_user_username_opts', '2021-03-14T12:56:55.231007+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0004_alter_user_username_opts', datetime.datetime(2021, 3, 14, 12, 56, 55, 231007, tzinfo=<UTC>))
+ALTER TABLE "auth_user" ALTER COLUMN "last_login" DROP NOT NULL; (params [])
+(0.000) ALTER TABLE "auth_user" ALTER COLUMN "last_login" DROP NOT NULL; args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0005_alter_user_last_login_null', '2021-03-14T12:56:55.248024+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0005_alter_user_last_login_null', datetime.datetime(2021, 3, 14, 12, 56, 55, 248024, tzinfo=<UTC>))
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0006_require_contenttypes_0002', '2021-03-14T12:56:55.254029+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0006_require_contenttypes_0002', datetime.datetime(2021, 3, 14, 12, 56, 55, 254029, tzinfo=<UTC>))
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0007_alter_validators_add_error_messages', '2021-03-14T12:56:55.269037+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0007_alter_validators_add_error_messages', datetime.datetime(2021, 3, 14, 12, 56, 55, 269037, tzinfo=<UTC>))
+ALTER TABLE "auth_user" ALTER COLUMN "username" TYPE varchar(150); (params [])
+(0.062) ALTER TABLE "auth_user" ALTER COLUMN "username" TYPE varchar(150); args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0008_alter_user_username_max_length', '2021-03-14T12:56:55.346671+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0008_alter_user_username_max_length', datetime.datetime(2021, 3, 14, 12, 56, 55, 346671, tzinfo=<UTC>))
+ALTER TABLE "auth_user" ALTER COLUMN "last_name" TYPE varchar(150); (params [])
+(0.000) ALTER TABLE "auth_user" ALTER COLUMN "last_name" TYPE varchar(150); args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0009_alter_user_last_name_max_length', '2021-03-14T12:56:55.361683+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0009_alter_user_last_name_max_length', datetime.datetime(2021, 3, 14, 12, 56, 55, 361683, tzinfo=<UTC>))
+ALTER TABLE "auth_group" ALTER COLUMN "name" TYPE varchar(150); (params [])
+(0.000) ALTER TABLE "auth_group" ALTER COLUMN "name" TYPE varchar(150); args=[]
+(0.015) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0010_alter_group_name_max_length', '2021-03-14T12:56:55.382696+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0010_alter_group_name_max_length', datetime.datetime(2021, 3, 14, 12, 56, 55, 382696, tzinfo=<UTC>))
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0011_update_proxy_permissions', '2021-03-14T12:56:55.406712+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0011_update_proxy_permissions', datetime.datetime(2021, 3, 14, 12, 56, 55, 406712, tzinfo=<UTC>))
+ALTER TABLE "auth_user" ALTER COLUMN "first_name" TYPE varchar(150); (params [])
+(0.000) ALTER TABLE "auth_user" ALTER COLUMN "first_name" TYPE varchar(150); args=[]
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('auth', '0012_alter_user_first_name_max_length', '2021-03-14T12:56:55.422723+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('auth', '0012_alter_user_first_name_max_length', datetime.datetime(2021, 3, 14, 12, 56, 55, 422723, tzinfo=<UTC>))
+CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); (params None)
+(0.094) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" timestamp with time zone NOT NULL); args=None
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2021-03-14T12:56:55.524779+00:00'::timestamptz) RETURNING "django_migrations"."id"; args=('sessions', '0001_initial', datetime.datetime(2021, 3, 14, 12, 56, 55, 524779, tzinfo=<UTC>))
+CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); (params ())
+(0.031) CREATE INDEX "django_session_session_key_c0390e0f_like" ON "django_session" ("session_key" varchar_pattern_ops); args=()
+CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+(0.063) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=()
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('admin', 'logentry') RETURNING "django_content_type"."id"; args=('admin', 'logentry')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'admin' AND "django_content_type"."model" = 'logentry') LIMIT 21; args=('admin', 'logentry')
+(0.016) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (1) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(1,)
+(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add log entry', 1, 'add_logentry'), ('Can change log entry', 1, 'change_logentry'), ('Can delete log entry', 1, 'delete_logentry'), ('Can view log entry', 1, 'view_logentry') RETURNING "auth_permission"."id"; args=('Can add log entry', 1, 'add_logentry', 'Can change log entry', 1, 'change_logentry', 'Can delete log entry', 1, 'delete_logentry', 'Can view log entry', 1, 'view_logentry')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'admin'; args=('admin',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('auth', 'permission'), ('auth', 'group'), ('auth', 'user') RETURNING "django_content_type"."id"; args=('auth', 'permission', 'auth', 'group', 'auth', 'user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'permission') LIMIT 21; args=('auth', 'permission')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'user') LIMIT 21; args=('auth', 'user')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (2, 3, 4) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2, 3, 4)
+(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add permission', 2, 'add_permission'), ('Can change permission', 2, 'change_permission'), ('Can delete permission', 2, 'delete_permission'), ('Can view permission', 2, 'view_permission'), ('Can add group', 3, 'add_group'), ('Can change group', 3, 'change_group'), ('Can delete group', 3, 'delete_group'), ('Can view group', 3, 'view_group'), ('Can add user', 4, 'add_user'), ('Can change user', 4, 'change_user'), ('Can delete user', 4, 'delete_user'), ('Can view user', 4, 'view_user') RETURNING "auth_permission"."id"; args=('Can add permission', 2, 'add_permission', 'Can change permission', 2, 'change_permission', 'Can delete permission', 2, 'delete_permission', 'Can view permission', 2, 'view_permission', 'Can add group', 3, 'add_group', 'Can change group', 3, 'change_group', 'Can delete group', 3, 'delete_group', 'Can view group', 3, 'view_group', 'Can add user', 4, 'add_user', 'Can change user', 4, 'change_user', 'Can delete user', 4, 'delete_user', 'Can view user', 4, 'view_user')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'auth'; args=('auth',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('contenttypes', 'contenttype') RETURNING "django_content_type"."id"; args=('contenttypes', 'contenttype')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'contenttypes' AND "django_content_type"."model" = 'contenttype') LIMIT 21; args=('contenttypes', 'contenttype')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (5) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(5,)
+(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add content type', 5, 'add_contenttype'), ('Can change content type', 5, 'change_contenttype'), ('Can delete content type', 5, 'delete_contenttype'), ('Can view content type', 5, 'view_contenttype') RETURNING "auth_permission"."id"; args=('Can add content type', 5, 'add_contenttype', 'Can change content type', 5, 'change_contenttype', 'Can delete content type', 5, 'delete_contenttype', 'Can view content type', 5, 'view_contenttype')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('sessions', 'session') RETURNING "django_content_type"."id"; args=('sessions', 'session')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'sessions' AND "django_content_type"."model" = 'session') LIMIT 21; args=('sessions', 'session')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (6) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(6,)
+(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add session', 6, 'add_session'), ('Can change session', 6, 'change_session'), ('Can delete session', 6, 'delete_session'), ('Can view session', 6, 'view_session') RETURNING "auth_permission"."id"; args=('Can add session', 6, 'add_session', 'Can change session', 6, 'change_session', 'Can delete session', 6, 'delete_session', 'Can view session', 6, 'view_session')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'app'; args=('app',)
+(0.000) INSERT INTO "django_content_type" ("app_label", "model") VALUES ('app', 'job'), ('app', 'student'), ('app', 'recruiter'), ('app', 'jobapply') RETURNING "django_content_type"."id"; args=('app', 'job', 'app', 'student', 'app', 'recruiter', 'app', 'jobapply')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'app' AND "django_content_type"."model" = 'job') LIMIT 21; args=('app', 'job')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'app' AND "django_content_type"."model" = 'student') LIMIT 21; args=('app', 'student')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'app' AND "django_content_type"."model" = 'recruiter') LIMIT 21; args=('app', 'recruiter')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'app' AND "django_content_type"."model" = 'jobapply') LIMIT 21; args=('app', 'jobapply')
+(0.000) SELECT "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_permission"."content_type_id" IN (8, 9, 10, 7) ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(8, 9, 10, 7)
+(0.000) INSERT INTO "auth_permission" ("name", "content_type_id", "codename") VALUES ('Can add job', 7, 'add_job'), ('Can change job', 7, 'change_job'), ('Can delete job', 7, 'delete_job'), ('Can view job', 7, 'view_job'), ('Can add student', 8, 'add_student'), ('Can change student', 8, 'change_student'), ('Can delete student', 8, 'delete_student'), ('Can view student', 8, 'view_student'), ('Can add recruiter', 9, 'add_recruiter'), ('Can change recruiter', 9, 'change_recruiter'), ('Can delete recruiter', 9, 'delete_recruiter'), ('Can view recruiter', 9, 'view_recruiter'), ('Can add job apply', 10, 'add_jobapply'), ('Can change job apply', 10, 'change_jobapply'), ('Can delete job apply', 10, 'delete_jobapply'), ('Can view job apply', 10, 'view_jobapply') RETURNING "auth_permission"."id"; args=('Can add job', 7, 'add_job', 'Can change job', 7, 'change_job', 'Can delete job', 7, 'delete_job', 'Can view job', 7, 'view_job', 'Can add student', 8, 'add_student', 'Can change student', 8, 'change_student', 'Can delete student', 8, 'delete_student', 'Can view student', 8, 'view_student', 'Can add recruiter', 9, 'add_recruiter', 'Can change recruiter', 9, 'change_recruiter', 'Can delete recruiter', 9, 'delete_recruiter', 'Can view recruiter', 9, 'view_recruiter', 'Can add job apply', 10, 'add_jobapply', 'Can change job apply', 10, 'change_jobapply', 'Can delete job apply', 10, 'delete_jobapply', 'Can view job apply', 10, 'view_jobapply')
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'app'; args=('app',)
+(0.000) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'arpit.kashyap09@gmail.com' LIMIT 21; args=('arpit.kashyap09@gmail.com',)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'arpit.kashyap09@gmail.com' LIMIT 21; args=('arpit.kashyap09@gmail.com',)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.016) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$216000$82CMqINdKLbZ$GLp2rdpP3lgfyVpv56CuoHXNrV6MmTe59wjLWnd9xww=', NULL, false, 'suraj@gamil.com', 'suraj', 'kashyap', '', false, true, '2021-03-14T13:00:10.848248+00:00'::timestamptz) RETURNING "auth_user"."id"; args=('pbkdf2_sha256$216000$82CMqINdKLbZ$GLp2rdpP3lgfyVpv56CuoHXNrV6MmTe59wjLWnd9xww=', None, False, 'suraj@gamil.com', 'suraj', 'kashyap', '', False, True, datetime.datetime(2021, 3, 14, 13, 0, 10, 848248, tzinfo=<UTC>))
+(0.016) INSERT INTO "app_student" ("user_id", "mobile", "image", "gender", "user_type") VALUES (1, '7905637810', 'signin-image.jpg', 'Male', 'student') RETURNING "app_student"."id"; args=(1, '7905637810', 'signin-image.jpg', 'Male', 'student')
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.031) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'suraj@gamil.com' LIMIT 21; args=('suraj@gamil.com',)
+(0.016) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r' LIMIT 1; args=('4jao32cgncmjlr0a88jwmmw14xtje48r',)
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('4jao32cgncmjlr0a88jwmmw14xtje48r', 'e30:1lLQM7:uaJkDdsfqBX_9tf3DHS9HxybENO0cw1YtexOxGypQFE', '2021-03-28T13:00:27.794101+00:00'::timestamptz); args=('4jao32cgncmjlr0a88jwmmw14xtje48r', 'e30:1lLQM7:uaJkDdsfqBX_9tf3DHS9HxybENO0cw1YtexOxGypQFE', datetime.datetime(2021, 3, 28, 13, 0, 27, 794101, tzinfo=<UTC>))
+(0.016) UPDATE "auth_user" SET "last_login" = '2021-03-14T13:00:27.797966+00:00'::timestamptz WHERE "auth_user"."id" = 1; args=(datetime.datetime(2021, 3, 14, 13, 0, 27, 797966, tzinfo=<UTC>), 1)
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.031) UPDATE "django_session" SET "session_data" = '.eJxVjMEOwiAQRP-FsyGAXcp69N5vILtApWogKe3J-O9K0oNe5jDvzbyEp33Lfm9p9UsUF6HF6bdjCo9UOoh3KrcqQy3burDsijxok1ON6Xk93L-DTC339RA0wABhTDADIaFT1n1D02wMn4HRRaTAZrQEFhEjAuqkFIYUGcX7A9M6N5k:1lLQM7:RLuYmGchEuPDMjErmPE9xytwVpmC15vHZ16zprcSJLc', "expire_date" = '2021-03-28T13:00:27.822675+00:00'::timestamptz WHERE "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r'; args=('.eJxVjMEOwiAQRP-FsyGAXcp69N5vILtApWogKe3J-O9K0oNe5jDvzbyEp33Lfm9p9UsUF6HF6bdjCo9UOoh3KrcqQy3burDsijxok1ON6Xk93L-DTC339RA0wABhTDADIaFT1n1D02wMn4HRRaTAZrQEFhEjAuqkFIYUGcX7A9M6N5k:1lLQM7:RLuYmGchEuPDMjErmPE9xytwVpmC15vHZ16zprcSJLc', datetime.datetime(2021, 3, 28, 13, 0, 27, 822675, tzinfo=<UTC>), '4jao32cgncmjlr0a88jwmmw14xtje48r')
+(0.031) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:00:29.636676+00:00'::timestamptz AND "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 0, 29, 636676, tzinfo=<UTC>), '4jao32cgncmjlr0a88jwmmw14xtje48r')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:00:31.929203+00:00'::timestamptz AND "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 0, 31, 929203, tzinfo=<UTC>), '4jao32cgncmjlr0a88jwmmw14xtje48r')
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_jobapply"."id", "app_jobapply"."job_id", "app_jobapply"."student_id", "app_jobapply"."first_name", "app_jobapply"."last_name", "app_jobapply"."email", "app_jobapply"."adddress", "app_jobapply"."zipcode", "app_jobapply"."mobile", "app_jobapply"."cv" FROM "app_jobapply" WHERE "app_jobapply"."student_id" = 1; args=(1,)
+(0.016) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.016) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',)
+(0.016) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'vineet' LIMIT 21; args=('vineet',)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',)
+(0.000) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$216000$5sSIpLOw9Nmq$4MspD8YiS609UoaCpmoq0ZyGxWQ7TQfUaYdhVXEPb78=', NULL, true, 'admin', '', '', '', true, true, '2021-03-14T13:04:24.923974+00:00'::timestamptz) RETURNING "auth_user"."id"; args=('pbkdf2_sha256$216000$5sSIpLOw9Nmq$4MspD8YiS609UoaCpmoq0ZyGxWQ7TQfUaYdhVXEPb78=', None, True, 'admin', '', '', '', True, True, datetime.datetime(2021, 3, 14, 13, 4, 24, 923974, tzinfo=<UTC>))
+(0.015) 
+            SELECT c.relname,
+            CASE WHEN c.relispartition THEN 'p' WHEN c.relkind IN ('m', 'v') THEN 'v' ELSE 't' END
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None
+(0.016) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'admin' LIMIT 21; args=('admin',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7' LIMIT 1; args=('j31ufmtjk6llyek6vdg3j2vbyhs13rx7',)
+(0.016) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('j31ufmtjk6llyek6vdg3j2vbyhs13rx7', 'e30:1lLQQE:DDgG7jrgRigRu7Hm7SdKbnrFRdXFUvKPi6yE7riFtdM', '2021-03-28T13:04:42.669178+00:00'::timestamptz); args=('j31ufmtjk6llyek6vdg3j2vbyhs13rx7', 'e30:1lLQQE:DDgG7jrgRigRu7Hm7SdKbnrFRdXFUvKPi6yE7riFtdM', datetime.datetime(2021, 3, 28, 13, 4, 42, 669178, tzinfo=<UTC>))
+(0.063) UPDATE "auth_user" SET "last_login" = '2021-03-14T13:04:42.693062+00:00'::timestamptz WHERE "auth_user"."id" = 2; args=(datetime.datetime(2021, 3, 14, 13, 4, 42, 693062, tzinfo=<UTC>), 2)
+(0.000) UPDATE "django_session" SET "session_data" = '.eJxVjEEOwiAQRe_C2hAoQwWX7nsGMgyDVA0kpV0Z765NutDtf-_9lwi4rSVsnZcwJ3ERgzj9bhHpwXUH6Y711iS1ui5zlLsiD9rl1BI_r4f7d1Cwl2_tRq8NaBvPADQkHIGdYmVh1EjGO0IghZkM8pB0di47jBo86gwcrRfvD88oN_0:1lLQQE:KgOiguahq33d1xsphH_AhMI3BxDuf2Y_JKcOBLE7oXw', "expire_date" = '2021-03-28T13:04:42.753220+00:00'::timestamptz WHERE "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7'; args=('.eJxVjEEOwiAQRe_C2hAoQwWX7nsGMgyDVA0kpV0Z765NutDtf-_9lwi4rSVsnZcwJ3ERgzj9bhHpwXUH6Y711iS1ui5zlLsiD9rl1BI_r4f7d1Cwl2_tRq8NaBvPADQkHIGdYmVh1EjGO0IghZkM8pB0di47jBo86gwcrRfvD88oN_0:1lLQQE:KgOiguahq33d1xsphH_AhMI3BxDuf2Y_JKcOBLE7oXw', datetime.datetime(2021, 3, 28, 13, 4, 42, 753220, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.016) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:04:42.760225+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 4, 42, 760225, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.016) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auth_user" ON ("django_admin_log"."user_id" = "auth_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 2 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(2,)
+(0.016) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:04:46.194406+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 4, 46, 194406, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:04:46.221431+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 4, 46, 221431, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.015) SELECT COUNT(*) AS "__count" FROM "app_student"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_student"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_student"; args=()
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" ORDER BY "app_student"."id" DESC; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_student"; args=()
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" ORDER BY "app_student"."id" DESC; args=()
+(0.047) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:04:46.838834+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 4, 46, 838834, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.032) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:07:38.378738+00:00'::timestamptz AND "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 7, 38, 378738, tzinfo=<UTC>), '4jao32cgncmjlr0a88jwmmw14xtje48r')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job"; args=()
+(0.015) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:07:54.857056+00:00'::timestamptz AND "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 7, 54, 857056, tzinfo=<UTC>), '4jao32cgncmjlr0a88jwmmw14xtje48r')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '4jao32cgncmjlr0a88jwmmw14xtje48r' LIMIT 21; args=('4jao32cgncmjlr0a88jwmmw14xtje48r',)
+(0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('4jao32cgncmjlr0a88jwmmw14xtje48r'); args=('4jao32cgncmjlr0a88jwmmw14xtje48r',)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.015) INSERT INTO "auth_user" ("password", "last_login", "is_superuser", "username", "first_name", "last_name", "email", "is_staff", "is_active", "date_joined") VALUES ('pbkdf2_sha256$216000$yTKP41JBOSvB$rFItTW0ecyjET6Z6FcbWmvji9FErvtO1Dek0WF6/PpU=', NULL, false, 'soniprakhar9@gmail.com', '', '', '', false, true, '2021-03-14T13:13:39.427144+00:00'::timestamptz) RETURNING "auth_user"."id"; args=('pbkdf2_sha256$216000$yTKP41JBOSvB$rFItTW0ecyjET6Z6FcbWmvji9FErvtO1Dek0WF6/PpU=', None, False, 'soniprakhar9@gmail.com', '', '', '', False, True, datetime.datetime(2021, 3, 14, 13, 13, 39, 427144, tzinfo=<UTC>))
+(0.531) INSERT INTO "app_recruiter" ("user_id", "company_name", "company_profile", "city", "web_address", "image", "user_type", "status") VALUES (3, 'SIPL', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium tempore ducimus praesentium dicta consequuntur, mollitia veniam possimus beatae eum animi porro veritatis modi facere architecto rerum blanditiis sequi libero!', 'kanpur ', 'www.sipl.com', 'jobfevi.jpeg', 'recruiter', 'pending') RETURNING "app_recruiter"."id"; args=(3, 'SIPL', ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium tempore ducimus praesentium dicta consequuntur, mollitia veniam possimus beatae eum animi porro veritatis modi facere architecto rerum blanditiis sequi libero!', 'kanpur ', 'www.sipl.com', 'jobfevi.jpeg', 'recruiter', 'pending')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:13:48.590369+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 13, 48, 590369, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.016) SELECT COUNT(*) AS "__count" FROM "app_recruiter"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_recruiter"; args=()
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" ORDER BY "app_recruiter"."id" DESC; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:13:49.211867+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 13, 49, 211867, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:13:50.630395+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 13, 50, 630395, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'app' AND "django_content_type"."model" = 'recruiter') LIMIT 21; args=('app', 'recruiter')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.015) DECLARE "_django_curs_12780_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+(0.016) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:13:51.582400+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 13, 51, 582400, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:13:59.922229+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 13, 59, 922229, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.016) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 1; args=(3,)
+(0.063) UPDATE "app_recruiter" SET "user_id" = 3, "company_name" = 'SIPL', "company_profile" = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium tempore ducimus praesentium dicta consequuntur, mollitia veniam possimus beatae eum animi porro veritatis modi facere architecto rerum blanditiis sequi libero!', "city" = 'kanpur', "web_address" = 'http://www.sipl.com', "image" = 'jobfevi.jpeg', "user_type" = 'recruiter', "status" = 'accepted' WHERE "app_recruiter"."id" = 1; args=(3, 'SIPL', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium tempore ducimus praesentium dicta consequuntur, mollitia veniam possimus beatae eum animi porro veritatis modi facere architecto rerum blanditiis sequi libero!', 'kanpur', 'http://www.sipl.com', 'jobfevi.jpeg', 'recruiter', 'accepted', 1)
+(0.000) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2021-03-14T13:14:00.199822+00:00'::timestamptz, 2, 9, '1', 'soniprakhar9@gmail.com', 2, '[{"changed": {"fields": ["Company profile", "City", "Web address", "Status"]}}]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2021, 3, 14, 13, 14, 0, 199822, tzinfo=<UTC>), 2, 9, '1', 'soniprakhar9@gmail.com', 2, '[{"changed": {"fields": ["Company profile", "City", "Web address", "Status"]}}]')
+(0.016) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:14:00.236348+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 14, 0, 236348, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.015) SELECT COUNT(*) AS "__count" FROM "app_recruiter"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_recruiter"; args=()
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" ORDER BY "app_recruiter"."id" DESC; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:14:00.424494+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 14, 0, 424494, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:16:13.832728+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 16, 13, 832728, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) DECLARE "_django_curs_5788_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:16:14.109214+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 16, 14, 109214, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:16:16.126875+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 16, 16, 126875, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.016) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT (1) AS "a" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 1; args=(3,)
+(0.000) UPDATE "app_recruiter" SET "user_id" = 3, "company_name" = 'SIPL', "company_profile" = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium tempore ducimus praesentium dicta consequuntur, mollitia veniam possimus beatae eum animi porro veritatis modi facere architecto rerum blanditiis sequi libero!', "city" = 'kanpur', "web_address" = 'http://www.sipl.com', "image" = 'jobfevi.jpeg', "user_type" = 'recruiter', "status" = 'accepted' WHERE "app_recruiter"."id" = 1; args=(3, 'SIPL', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusantium tempore ducimus praesentium dicta consequuntur, mollitia veniam possimus beatae eum animi porro veritatis modi facere architecto rerum blanditiis sequi libero!', 'kanpur', 'http://www.sipl.com', 'jobfevi.jpeg', 'recruiter', 'accepted', 1)
+(0.000) INSERT INTO "django_admin_log" ("action_time", "user_id", "content_type_id", "object_id", "object_repr", "action_flag", "change_message") VALUES ('2021-03-14T13:16:16.203938+00:00'::timestamptz, 2, 9, '1', 'soniprakhar9@gmail.com', 2, '[]') RETURNING "django_admin_log"."id"; args=(datetime.datetime(2021, 3, 14, 13, 16, 16, 203938, tzinfo=<UTC>), 2, 9, '1', 'soniprakhar9@gmail.com', 2, '[]')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:16:16.225957+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 16, 16, 225957, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_recruiter"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_recruiter"; args=()
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" ORDER BY "app_recruiter"."id" DESC; args=()
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:16:16.500662+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 16, 16, 500662, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'soniprakhar9@gmail.com' LIMIT 21; args=('soniprakhar9@gmail.com',)
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."user_id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips' LIMIT 1; args=('8be6wofzkxog5o92zq42ms6c3mjttips',)
+(0.016) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('8be6wofzkxog5o92zq42ms6c3mjttips', 'e30:1lLQbl:P8-8lvWj7NPFQ_Wcj-ds-6YtvKfEOWmtr89XmKCGT3Y', '2021-03-28T13:16:37.668034+00:00'::timestamptz); args=('8be6wofzkxog5o92zq42ms6c3mjttips', 'e30:1lLQbl:P8-8lvWj7NPFQ_Wcj-ds-6YtvKfEOWmtr89XmKCGT3Y', datetime.datetime(2021, 3, 28, 13, 16, 37, 668034, tzinfo=<UTC>))
+(0.000) UPDATE "auth_user" SET "last_login" = '2021-03-14T13:16:37.688059+00:00'::timestamptz WHERE "auth_user"."id" = 3; args=(datetime.datetime(2021, 3, 14, 13, 16, 37, 688059, tzinfo=<UTC>), 3)
+(0.016) UPDATE "django_session" SET "session_data" = '.eJxVjEEOgjAQRe_StWk6dGjFpXvO0ExnGEENTSisjHdXEha6_e-9_zKJtnVMWx2WNIm5GG9Ov1smfgzzDuRO861YLvO6TNnuij1otX2R4Xk93L-Dker4rZ2CQgcUWnEgigCSo0NGAUbftsrccdagDhvOkfKZUJ0PPmAToxfz_gDpUjfq:1lLQbl:rLoyWUIi_Zm4bgT-Q-z2JYe3e9SM6cKytkY_JTTum9s', "expire_date" = '2021-03-28T13:16:37.693062+00:00'::timestamptz WHERE "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips'; args=('.eJxVjEEOgjAQRe_StWk6dGjFpXvO0ExnGEENTSisjHdXEha6_e-9_zKJtnVMWx2WNIm5GG9Ov1smfgzzDuRO861YLvO6TNnuij1otX2R4Xk93L-Dker4rZ2CQgcUWnEgigCSo0NGAUbftsrccdagDhvOkfKZUJ0PPmAToxfz_gDpUjfq:1lLQbl:rLoyWUIi_Zm4bgT-Q-z2JYe3e9SM6cKytkY_JTTum9s', datetime.datetime(2021, 3, 28, 13, 16, 37, 693062, tzinfo=<UTC>), '8be6wofzkxog5o92zq42ms6c3mjttips')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:16:39.376600+00:00'::timestamptz AND "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 16, 39, 376600, tzinfo=<UTC>), '8be6wofzkxog5o92zq42ms6c3mjttips')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:18:39.375643+00:00'::timestamptz AND "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 18, 39, 375643, tzinfo=<UTC>), '8be6wofzkxog5o92zq42ms6c3mjttips')
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."user_id" = 3 LIMIT 21; args=(3,)
+(0.032) INSERT INTO "app_job" ("recruiter_id", "job_title", "job_type", "job_location", "experiance_qualification", "skill", "discription", "vacancy", "creation_date", "start_date", "end_date") VALUES (1, 'Python Developer', 'Technical', 'Delhi', 'B.tech', 'python,django', '<ul>
+	<li>
+	<p>We are looking for a Python Developer to join our engineering team and help us develop and maintain various software products.</p>
+	</li>
+	<li>
+	<p>Python Developer responsibilities include writing and testing code, debugging programs and integrating applications with third-party web services. To be successful in this role, you should have experience using server-side logic and work well in a team.</p>
+	</li>
+	<li>Ultimately, you&rsquo;ll build highly responsive web applications that align with our business needs.</li>
+</ul>
+', '10', '2021-03-14'::date, '2021-03-17'::date, '2021-03-24'::date) RETURNING "app_job"."id"; args=(1, 'Python Developer', 'Technical', 'Delhi', 'B.tech', 'python,django', '<ul>\r\n\t<li>\r\n\t<p>We are looking for a Python Developer to join our engineering team and help us develop and maintain various software products.</p>\r\n\t</li>\r\n\t<li>\r\n\t<p>Python Developer responsibilities include writing and testing code, debugging programs and integrating applications with third-party web services. To be successful in this role, you should have experience using server-side logic and work well in a team.</p>\r\n\t</li>\r\n\t<li>Ultimately, you&rsquo;ll build highly responsive web applications that align with our business needs.</li>\r\n</ul>\r\n', '10', datetime.date(2021, 3, 14), datetime.date(2021, 3, 17), datetime.date(2021, 3, 24))
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:18:39.657976+00:00'::timestamptz AND "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 18, 39, 657976, tzinfo=<UTC>), '8be6wofzkxog5o92zq42ms6c3mjttips')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.015) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."user_id" = 3 LIMIT 21; args=(3,)
+(0.016) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" WHERE "app_job"."recruiter_id" = 1; args=(1,)
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.016) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:18:51.132328+00:00'::timestamptz AND "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 18, 51, 132328, tzinfo=<UTC>), '8be6wofzkxog5o92zq42ms6c3mjttips')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = '8be6wofzkxog5o92zq42ms6c3mjttips' LIMIT 21; args=('8be6wofzkxog5o92zq42ms6c3mjttips',)
+(0.016) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('8be6wofzkxog5o92zq42ms6c3mjttips'); args=('8be6wofzkxog5o92zq42ms6c3mjttips',)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" LIMIT 5; args=()
+(0.016) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:03.613345+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 3, 613345, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.016) SELECT COUNT(*) AS "__count" FROM "app_student"; args=()
+(0.000) SELECT COUNT(*) AS "__count" FROM "app_student"; args=()
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" ORDER BY "app_student"."id" DESC; args=()
+(0.016) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:03.861918+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 3, 861918, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:04.833792+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 4, 833792, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'app' AND "django_content_type"."model" = 'student') LIMIT 21; args=('app', 'student')
+(0.000) DECLARE "_django_curs_15200_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" ORDER BY "auth_user"."username" ASC; args=()
+(0.015) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:05.003722+00:00'::timestamptz AND "django_session"."session_key" = 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 5, 3722, tzinfo=<UTC>), 'j31ufmtjk6llyek6vdg3j2vbyhs13rx7')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 2 LIMIT 21; args=(2,)
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."username" = 'suraj@gamil.com' LIMIT 21; args=('suraj@gamil.com',)
+(0.016) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2' LIMIT 1; args=('02zbapqj0ln2yy50blcorm5lurknt4q2',)
+(0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('02zbapqj0ln2yy50blcorm5lurknt4q2', 'e30:1lLQeJ:g8J2UNo1mh_uGXL1uhcvZh_albNcXByAU6eszOBf8VM', '2021-03-28T13:19:15.027998+00:00'::timestamptz); args=('02zbapqj0ln2yy50blcorm5lurknt4q2', 'e30:1lLQeJ:g8J2UNo1mh_uGXL1uhcvZh_albNcXByAU6eszOBf8VM', datetime.datetime(2021, 3, 28, 13, 19, 15, 27998, tzinfo=<UTC>))
+(0.000) UPDATE "auth_user" SET "last_login" = '2021-03-14T13:19:15.032001+00:00'::timestamptz WHERE "auth_user"."id" = 1; args=(datetime.datetime(2021, 3, 14, 13, 19, 15, 32001, tzinfo=<UTC>), 1)
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) UPDATE "django_session" SET "session_data" = '.eJxVjMEOwiAQRP-FsyGAXcp69N5vILtApWogKe3J-O9K0oNe5jDvzbyEp33Lfm9p9UsUF6HF6bdjCo9UOoh3KrcqQy3burDsijxok1ON6Xk93L-DTC339RA0wABhTDADIaFT1n1D02wMn4HRRaTAZrQEFhEjAuqkFIYUGcX7A9M6N5k:1lLQeJ:TAL2xucJkXjnGqSwwQqHLY8xzj_g4sI9XBvcY7eve40', "expire_date" = '2021-03-28T13:19:15.042012+00:00'::timestamptz WHERE "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2'; args=('.eJxVjMEOwiAQRP-FsyGAXcp69N5vILtApWogKe3J-O9K0oNe5jDvzbyEp33Lfm9p9UsUF6HF6bdjCo9UOoh3KrcqQy3burDsijxok1ON6Xk93L-DTC339RA0wABhTDADIaFT1n1D02wMn4HRRaTAZrQEFhEjAuqkFIYUGcX7A9M6N5k:1lLQeJ:TAL2xucJkXjnGqSwwQqHLY8xzj_g4sI9XBvcY7eve40', datetime.datetime(2021, 3, 28, 13, 19, 15, 42012, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:16.461544+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 16, 461544, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:19.478935+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 19, 478935, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.016) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_jobapply"."id", "app_jobapply"."job_id", "app_jobapply"."student_id", "app_jobapply"."first_name", "app_jobapply"."last_name", "app_jobapply"."email", "app_jobapply"."adddress", "app_jobapply"."zipcode", "app_jobapply"."mobile", "app_jobapply"."cv" FROM "app_jobapply" WHERE "app_jobapply"."student_id" = 1; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:22.437195+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 22, 437195, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.016) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job"; args=()
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" WHERE "app_job"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:25.977123+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 25, 977123, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.016) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:19:40.817456+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 19, 40, 817456, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.015) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" WHERE "app_job"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:20:20.751415+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 20, 20, 751415, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.016) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" WHERE "app_job"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_jobapply"."id", "app_jobapply"."job_id", "app_jobapply"."student_id", "app_jobapply"."first_name", "app_jobapply"."last_name", "app_jobapply"."email", "app_jobapply"."adddress", "app_jobapply"."zipcode", "app_jobapply"."mobile", "app_jobapply"."cv" FROM "app_jobapply" WHERE ("app_jobapply"."job_id" = 1 AND "app_jobapply"."student_id" = 1) LIMIT 21; args=(1, 1)
+(0.172) INSERT INTO "app_jobapply" ("job_id", "student_id", "first_name", "last_name", "email", "adddress", "zipcode", "mobile", "cv") VALUES (1, 1, 'suraj', 'kashyap', 'vkvineet66@gmail.com', 'delhi', '205080', '7905637810', 'Core_Python.pdf') RETURNING "app_jobapply"."id"; args=(1, 1, 'suraj', 'kashyap', 'vkvineet66@gmail.com', 'delhi', '205080', '7905637810', 'Core_Python.pdf')
+(0.000) SELECT "app_jobapply"."id", "app_jobapply"."job_id", "app_jobapply"."student_id", "app_jobapply"."first_name", "app_jobapply"."last_name", "app_jobapply"."email", "app_jobapply"."adddress", "app_jobapply"."zipcode", "app_jobapply"."mobile", "app_jobapply"."cv" FROM "app_jobapply" WHERE ("app_jobapply"."job_id" = 1 AND "app_jobapply"."student_id" = 1) LIMIT 21; args=(1, 1)
+(0.000) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" WHERE "app_job"."id" = 1 LIMIT 21; args=(1,)
+(0.046) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 3 LIMIT 21; args=(3,)
+(0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2021-03-14T13:20:36.202952+00:00'::timestamptz AND "django_session"."session_key" = '02zbapqj0ln2yy50blcorm5lurknt4q2') LIMIT 21; args=(datetime.datetime(2021, 3, 14, 13, 20, 36, 202952, tzinfo=<UTC>), '02zbapqj0ln2yy50blcorm5lurknt4q2')
+(0.015) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_student"."id", "app_student"."user_id", "app_student"."mobile", "app_student"."image", "app_student"."gender", "app_student"."user_type" FROM "app_student" WHERE "app_student"."user_id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_jobapply"."id", "app_jobapply"."job_id", "app_jobapply"."student_id", "app_jobapply"."first_name", "app_jobapply"."last_name", "app_jobapply"."email", "app_jobapply"."adddress", "app_jobapply"."zipcode", "app_jobapply"."mobile", "app_jobapply"."cv" FROM "app_jobapply" WHERE "app_jobapply"."student_id" = 1; args=(1,)
+(0.016) SELECT "app_job"."id", "app_job"."recruiter_id", "app_job"."job_title", "app_job"."job_type", "app_job"."job_location", "app_job"."experiance_qualification", "app_job"."skill", "app_job"."discription", "app_job"."vacancy", "app_job"."creation_date", "app_job"."start_date", "app_job"."end_date" FROM "app_job" WHERE "app_job"."id" = 1 LIMIT 21; args=(1,)
+(0.000) SELECT "app_recruiter"."id", "app_recruiter"."user_id", "app_recruiter"."company_name", "app_recruiter"."company_profile", "app_recruiter"."city", "app_recruiter"."web_address", "app_recruiter"."image", "app_recruiter"."user_type", "app_recruiter"."status" FROM "app_recruiter" WHERE "app_recruiter"."id" = 1 LIMIT 21; args=(1,)
