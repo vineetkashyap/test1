@@ -26,7 +26,7 @@ SECRET_KEY =os.environ['SECRET_KEY']
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
 
 # ALLOWED_HOSTS = ['*']
@@ -167,5 +167,5 @@ STATICFILES_DIRS = (
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEBUG_PROPAGATE_EXCEPTIONS = True
-# COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorag'
