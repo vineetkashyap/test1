@@ -166,5 +166,6 @@ LOGGING = {
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEBUG_PROPAGATE_EXCEPTIONS = True
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
