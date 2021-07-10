@@ -20,19 +20,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =os.environ['SECRET_KEY']
-# SECRET_KEY ='ps0wc-((uh*t3+yi(6cg%&s!sl#f3k#$s44$8g5yd&!@5!c1+m'
+# SECRET_KEY =os.environ['SECRET_KEY']
+SECRET_KEY ='ps0wc-((uh*t3+yi(6cg%&s!sl#f3k#$s44$8g5yd&!@5!c1+m'
 
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
+# ALLOWED_HOSTS = ['jobwale.herokuapp.com','localhost']
 
-# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
-import socket
-socket.getaddrinfo('localhost', 8000)
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -47,7 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-     'whitenoise.middleware.WhiteNoiseMiddleware',
+    #  'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -90,9 +89,9 @@ DATABASES = {
          'PORT': '5432',
     }
 }
-import dj_database_url
-db_from_env= dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
+# import dj_database_url
+# db_from_env= dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(db_from_env)
 
 
 # Password validation
@@ -165,7 +164,7 @@ LOGGING = {
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # DEBUG_PROPAGATE_EXCEPTIONS = True
-COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+# COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 # STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorag'
